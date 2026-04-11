@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Zamorano · Courses</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #F2F6D0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #D98324;
+      padding: 20px 20px 10px 20px;
+      text-align: center;
+      color: white;
+      border-bottom: 4px solid #b86b1c;
+    }
+    header h1 {
+      margin: 0 0 15px 0;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      gap: 10px;
+    }
+    header nav ul li {
+      margin: 0 8px;
+    }
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 6px 14px;
+      border-radius: 25px;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+    header nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    header nav ul li a.active {
+      background-color: white;
+      color: #D98324;
+    }
+    main {
+      padding: 40px 25px;
+      background-color: #EFDCAB;
+      min-height: 60vh;
+    }
+    .content-section {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #D98324;
+      font-size: 2rem;
+      margin-top: 0;
+      border-bottom: 2px solid #D98324;
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+    .course-item {
+      background-color: white;
+      padding: 18px 25px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+    .course-code {
+      font-weight: 700;
+      color: #D98324;
+      min-width: 120px;
+      font-size: 1.1rem;
+    }
+    .course-name {
+      flex: 1;
+      font-weight: 600;
+    }
+    .course-role {
+      color: #777;
+      font-style: italic;
+      margin-left: 20px;
+    }
+    footer {
+      background-color: #D98324;
+      color: white;
+      padding: 18px;
+      text-align: center;
+      border-top: 2px solid #b86b1c;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .course-item { flex-direction: column; }
+      .course-role { margin-left: 0; margin-top: 5px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alejandro Zamorano</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <h2>Teaching Experience</h2>
+      <div style="margin-top: 30px;">
+        
+        <div class="course-item">
+          <span class="course-code">FI3002</span>
+          <span class="course-name">Electrodinámica Clásica</span>
+          <span class="course-role">Ayudante · 2024-2025</span>
+        </div>
+
+        <div class="course-item">
+          <span class="course-code">FI4001</span>
+          <span class="course-name">Mecánica Cuántica I</span>
+          <span class="course-role">Ayudante · 2024</span>
+        </div>
+
+        <div class="course-item">
+          <span class="course-code">FI2003</span>
+          <span class="course-name">Métodos Matemáticos de la Física</span>
+          <span class="course-role">Profesor Auxiliar · 2023</span>
+        </div>
+
+        <div class="course-item">
+          <span class="course-code">FI1002</span>
+          <span class="course-name">Introducción a la Física Moderna</span>
+          <span class="course-role">Ayudante · 2022-2023</span>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Alejandro Zamorano · Solar Physics & Complex Systems</p>
+  </footer>
+</body>
+</html>
