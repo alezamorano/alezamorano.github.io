@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Zamorano · Programs</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #F2F6D0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #D98324;
+      padding: 20px 20px 10px 20px;
+      text-align: center;
+      color: white;
+      border-bottom: 4px solid #b86b1c;
+    }
+    header h1 {
+      margin: 0 0 15px 0;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      gap: 10px;
+    }
+    header nav ul li {
+      margin: 0 8px;
+    }
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 6px 14px;
+      border-radius: 25px;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+    header nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    header nav ul li a.active {
+      background-color: white;
+      color: #D98324;
+    }
+    main {
+      padding: 40px 25px;
+      background-color: #EFDCAB;
+      min-height: 60vh;
+    }
+    .content-section {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #D98324;
+      font-size: 2rem;
+      margin-top: 0;
+      border-bottom: 2px solid #D98324;
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+    .program-card {
+      background-color: white;
+      padding: 18px 25px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    }
+    .program-name {
+      font-weight: 700;
+      color: #D98324;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+    .program-desc {
+      color: #555;
+    }
+    .program-links {
+      margin-top: 10px;
+    }
+    .program-links a {
+      color: #D98324;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 20px;
+    }
+    footer {
+      background-color: #D98324;
+      color: white;
+      padding: 18px;
+      text-align: center;
+      border-top: 2px solid #b86b1c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alejandro Zamorano</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="programs.html" class="active">Programs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <h2>Codes & Programs</h2>
+      <div style="margin-top: 30px;">
+        
+        <div class="program-card">
+          <div class="program-name">FlareNet</div>
+          <div class="program-desc">Python package for constructing complex networks from solar flare catalogs. Implements visibility graph and recurrence network algorithms.</div>
+          <div class="program-links">
+            <a href="#">GitHub</a>
+            <a href="#">Documentation</a>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-name">SOC-Solar</div>
+          <div class="program-desc">Fortran/Python code for simulating self-organized criticality models (BTW sandpile) applied to stellar flare statistics.</div>
+          <div class="program-links">
+            <a href="#">GitHub</a>
+            <a href="#">arXiv</a>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-name">SDO-Downloader</div>
+          <div class="program-desc">Bash/Python scripts to automate the download and preprocessing of SDO/AIA and HMI data from the JSOC database.</div>
+          <div class="program-links">
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Alejandro Zamorano · Solar Physics & Complex Systems</p>
+  </footer>
+</body>
+</html>
