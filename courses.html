@@ -4,6 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alejandro Zamorano · Courses</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Teaching experience of Alejandro Zamorano - Courses in Statistical Mechanics, Electrodynamics, Quantum Mechanics, and Numerical Methods at Universidad de Chile.">
+  <meta name="keywords" content="Alejandro Zamorano, Teaching, Physics Courses, Statistical Mechanics, Electrodynamics, Quantum Mechanics, Teaching Assistant, Universidad de Chile">
+  <meta name="author" content="Alejandro Zamorano">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://alezamorano.github.io/courses.html">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Alejandro Zamorano · Teaching">
+  <meta property="og:description" content="Teaching experience in physics courses at Universidad de Chile.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alezamorano.github.io/courses.html">
+  <meta property="og:image" content="https://alezamorano.github.io/profile.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Alejandro Zamorano · Courses">
+  <meta name="twitter:description" content="Physics Teaching Assistant at Universidad de Chile.">
+  <meta name="twitter:image" content="https://alezamorano.github.io/profile.jpg">
+  
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -70,31 +93,87 @@
       padding-bottom: 8px;
       display: inline-block;
     }
+    
+    /* Sección de resumen */
+    .teaching-summary {
+      background-color: white;
+      padding: 18px 25px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+      text-align: center;
+      color: #555;
+      border-left: 5px solid #D98324;
+    }
+    
+    .teaching-summary p {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+    
     .course-item {
       background-color: white;
       padding: 18px 25px;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
       border-radius: 12px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.06);
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .course-code {
-      font-weight: 700;
-      color: #D98324;
-      min-width: 120px;
-      font-size: 1.1rem;
+    
+    .course-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.1);
     }
+    
     .course-name {
       flex: 1;
       font-weight: 600;
+      font-size: 1.1rem;
     }
+    
     .course-role {
       color: #777;
       font-style: italic;
       margin-left: 20px;
+      font-size: 0.95rem;
     }
+    
+    /* Badge para nivel del curso */
+    .course-level {
+      display: inline-block;
+      background-color: #F2F6D0;
+      color: #D98324;
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 12px;
+      margin-left: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      font-style: normal;
+    }
+    
+    /* Agrupación por años */
+    .year-group {
+      margin-top: 25px;
+    }
+    
+    .year-group:first-of-type {
+      margin-top: 30px;
+    }
+    
+    .year-heading {
+      color: #b86b1c;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 20px 0 12px 0;
+      padding-bottom: 5px;
+      border-bottom: 1px dashed #D98324;
+    }
+    
     footer {
       background-color: #D98324;
       color: white;
@@ -102,10 +181,12 @@
       text-align: center;
       border-top: 2px solid #b86b1c;
     }
+    
     @media (max-width: 600px) {
       header h1 { font-size: 2rem; }
       .course-item { flex-direction: column; }
       .course-role { margin-left: 0; margin-top: 5px; }
+      .course-level { margin-left: 0; margin-top: 5px; display: inline-block; }
     }
   </style>
 </head>
@@ -126,34 +207,59 @@
   <main>
     <section class="content-section">
       <h2>Teaching Experience</h2>
-      <div style="margin-top: 30px;">
-
-         <div class="course-item">
-          <span class="course-name">Statistical Mechanics (Graduate & Undergraduate)</span>
-          <span class="course-role">Teaching Assistant · 2023-2024</span>
+      
+      <!-- Resumen de docencia -->
+      <div class="teaching-summary">
+        <p>📖 Teaching Assistant at Departamento de Física, Universidad de Chile · 2019–2024</p>
+      </div>
+      
+      <div style="margin-top: 20px;">
+        
+        <!-- 2023-2024 -->
+        <div class="year-heading">📌 2023 – 2024</div>
+        
+        <div class="course-item">
+          <span class="course-name">
+            Statistical Mechanics 
+            <span class="course-level">Grad/Undergrad</span>
+          </span>
+          <span class="course-role">Teaching Assistant · 2023–2024</span>
         </div>
         
-         <div class="course-item">
-          <span class="course-name">Modern Physics II</span>
-          <span class="course-role">Teaching Assistant · 2022 & 2024</span>
+        <!-- 2022 & 2024 -->
+        <div class="year-heading">📌 2022 &amp; 2024</div>
+        
+        <div class="course-item">
+          <span class="course-name">
+            Modern Physics II
+          </span>
+          <span class="course-role">Teaching Assistant · 2022 &amp; 2024</span>
         </div>
         
         <div class="course-item">
-          <span class="course-name">Classical Electrodynamics (Graduate & Undergraduate)</span>
-          <span class="course-role">Teaching Assistant · 2022 & 2024</span>
+          <span class="course-name">
+            Classical Electrodynamics
+            <span class="course-level">Grad/Undergrad</span>
+          </span>
+          <span class="course-role">Teaching Assistant · 2022 &amp; 2024</span>
         </div>
-
+        
+        <!-- 2022 -->
+        <div class="year-heading">📌 2022</div>
+        
         <div class="course-item">
           <span class="course-name">Quantum Mechanics I</span>
           <span class="course-role">Teaching Assistant · 2022</span>
         </div>
-
+        
         <div class="course-item">
-          <span class="course-name">Methamatical Methods for Physicist II</span>
+          <span class="course-name">Mathematical Methods for Physicists II</span>
           <span class="course-role">Teaching Assistant · 2022</span>
         </div>
         
-
+        <!-- 2021 -->
+        <div class="year-heading">📌 2021</div>
+        
         <div class="course-item">
           <span class="course-name">Classical Mechanics</span>
           <span class="course-role">Teaching Assistant · 2021</span>
@@ -163,26 +269,44 @@
           <span class="course-name">Thermodynamics</span>
           <span class="course-role">Teaching Assistant · 2021</span>
         </div>
-
-
         
-         <div class="course-item">
+        <!-- 2020-2021 -->
+        <div class="year-heading">📌 2020 – 2021</div>
+        
+        <div class="course-item">
           <span class="course-name">Programming and Numerical Methods</span>
-          <span class="course-role">Teaching Assistant · 2020-2021</span>
+          <span class="course-role">Teaching Assistant · 2020–2021</span>
         </div>
+        
+        <!-- 2019 -->
+        <div class="year-heading">📌 2019</div>
         
         <div class="course-item">
           <span class="course-name">Introduction to Mechanics</span>
           <span class="course-role">Teaching Assistant · 2019</span>
         </div>
-<!---
+
+        <!-- 
+        ============================================================
+        CURSOS COMENTADOS - DESCOMENTAR SI ES NECESARIO
+        ============================================================
+        
         <div class="course-item">
           <span class="course-code">FI1002</span>
           <span class="course-name">Introducción a la Física Moderna</span>
           <span class="course-role">Ayudante · 2022-2023</span>
         </div>
---->
+        
+        ============================================================
+        -->
+        
       </div>
+      
+      <!-- Nota al pie -->
+      <p style="margin-top: 30px; text-align: center; color: #777; font-size: 0.9rem; font-style: italic;">
+        ⏤ All courses taught at Facultad de Ciencias, Universidad de Chile ⏤
+      </p>
+      
     </section>
   </main>
 
