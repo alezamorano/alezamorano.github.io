@@ -3,7 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alejandro Zamorano · About Me</title>
+  <title>Alejandro Zamorano · Solar Physics & Complex Systems</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Alejandro Zamorano - PhD candidate in Physics at Universidad de Chile. Research on solar flares, nonlinear dynamics, self-organized criticality, and complex networks.">
+  <meta name="keywords" content="Alejandro Zamorano, Solar Physics, Nonlinear Dynamics, Complex Systems, Self-Organized Criticality, Solar Flares, Complex Networks, PhD, Physics, Universidad de Chile">
+  <meta name="author" content="Alejandro Zamorano">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://alezamorano.github.io/">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Alejandro Zamorano · Solar Physics & Complex Systems">
+  <meta property="og:description" content="PhD candidate researching solar flares, nonlinear dynamics, and self-organized criticality using complex network tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alezamorano.github.io/">
+  <meta property="og:image" content="https://alezamorano.github.io/profile.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Alejandro Zamorano">
+  <meta name="twitter:description" content="Solar Physics & Complex Systems Researcher">
+  <meta name="twitter:image" content="https://alezamorano.github.io/profile.png">
+  
+  <!-- Schema.org markup for Google (Academic/Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alejandro Zamorano",
+    "givenName": "Alejandro",
+    "familyName": "Zamorano",
+    "jobTitle": "PhD Candidate in Physics",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Universidad de Chile",
+      "department": "Departamento de Física, Facultad de Ciencias"
+    },
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Universidad de Chile"
+    },
+    "knowsAbout": [
+      "Solar Physics",
+      "Nonlinear Dynamics",
+      "Complex Systems",
+      "Self-Organized Criticality",
+      "Complex Networks",
+      "Plasma Physics",
+      "Statistical Mechanics"
+    ],
+    "url": "https://alezamorano.github.io",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=rHv3T28AAAAJ",
+      "https://github.com/alezamorano"
+    ]
+  }
+  </script>
+  
   <style>
     /* --- ESTILO BASE --- */
     body {
@@ -124,6 +182,19 @@
       margin-top: 0;
       font-size: 1.1rem;
     }
+    
+    /* Advisor info con estilo */
+    .advisor-info {
+      background-color: rgba(217, 131, 36, 0.08);
+      padding: 12px 18px;
+      border-radius: 10px;
+      margin-top: 15px;
+      border-left: 3px solid #D98324;
+    }
+    
+    .advisor-info strong {
+      color: #b86b1c;
+    }
 
     /* Lista de intereses */
     .interests-grid {
@@ -147,6 +218,24 @@
       position: absolute;
       left: 0;
       top: 2px;
+    }
+    
+    /* Quote box */
+    .quote-box {
+      margin-top: 30px;
+      padding: 18px 25px;
+      background-color: white;
+      border-radius: 40px 10px 40px 10px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      border: 1px solid rgba(217, 131, 36, 0.2);
+    }
+    
+    .quote-box p {
+      margin: 0;
+      font-style: italic;
+      color: #555;
+      font-size: 1.15rem;
     }
 
     /* Footer */
@@ -182,6 +271,10 @@
       .interest-item {
         text-align: left;
       }
+      
+      .advisor-info {
+        text-align: left;
+      }
     }
   </style>
 </head>
@@ -202,28 +295,29 @@
   <main>
     <section class="content-section">
       <div class="profile-container">
-        <!-- Si tienes foto, reemplaza el src por "profile.jpg" -->
+        <!-- Foto de perfil -->
         <img src="profile.png" alt="Alejandro Zamorano" class="profile-img">
         
         <div class="profile-text">
           <p class="intro-text">
-            I am a <span class="highlight">PhD (c)</span> in Physics at the 
+            I am a <span class="highlight">PhD candidate</span> in Physics at the 
             <span class="highlight">Universidad de Chile</span>, focused on the study of 
             <span class="highlight">solar flares</span> and their <span class="highlight">nonlinear dynamics</span>
             using <span class="highlight">complex network</span> tools.
           </p>
           
           <p>
-            My thesis focuses on sandpile models and complex networks to model the nonlinear
-            dynamics of self-organized criticality systems, in specific solar flares, 
+            My thesis focuses on <strong>sandpile models</strong> and <strong>complex networks</strong> to model the nonlinear
+            dynamics of <strong>self-organized criticality</strong> systems, specifically solar flares, 
             thereby studying energy fluctuations numerically and comparing 
-            the topology of the simulations with observations from the Solar Dynamics Observatory
+            the topology of the simulations with observations from the <strong>Solar Dynamics Observatory (SDO)</strong>.
           </p>
           
-          <p>
-            <strong>Advisors:</strong> Dr. Víctor Muñoz, Dra. Denisse Pastén<br>
-            <strong>Group:</strong> Plasma Networks and Seismicity (PlaNetS)
-          </p>
+          <div class="advisor-info">
+            <strong>Advisors:</strong> Dr. Víctor Muñoz &amp; Dra. Denisse Pastén<br>
+            <strong>Research Group:</strong> Plasma Networks and Seismicity (PlaNetS)<br>
+            <strong>Department:</strong> Departamento de Física, Facultad de Ciencias
+          </div>
         </div>
       </div>
 
@@ -241,15 +335,15 @@
         <div class="interest-item">Self-Organized Criticality</div>
         <div class="interest-item">Pattern Formation</div>
         <div class="interest-item">Out-of-Equilibrium Statistical Mechanics</div>
-        <div class="interest-item">Special & General Relativity</div>
+        <div class="interest-item">Special &amp; General Relativity</div>
         <div class="interest-item">Biophysics as Complex System</div>
         <div class="interest-item">Social Dynamics</div>
-        <div class="interest-item">Knots</div>
+        <div class="interest-item">Knot Theory</div>
       </div>
       
-      <p style="margin-top: 30px; font-style: italic; color: #555;">
-        "We live in a complex, nonlinear universe"
-      </p>
+      <div class="quote-box">
+        <p>"We live in a complex, nonlinear universe."</p>
+      </div>
     </section>
   </main>
 
