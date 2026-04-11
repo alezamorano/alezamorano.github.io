@@ -4,6 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alejandro Zamorano · Contact</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Contact Alejandro Zamorano - PhD student in Physics at Universidad de Chile researching solar flares and complex systems.">
+  <meta name="keywords" content="Alejandro Zamorano, Contact, Solar Physics, Universidad de Chile, Physics PhD, Research">
+  <meta name="author" content="Alejandro Zamorano">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://alezamorano.github.io/contact.html">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Alejandro Zamorano · Contact">
+  <meta property="og:description" content="Get in touch with Alejandro Zamorano - PhD student in Solar Physics at Universidad de Chile.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alezamorano.github.io/contact.html">
+  <meta property="og:image" content="https://alezamorano.github.io/profile.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Alejandro Zamorano · Contact">
+  <meta name="twitter:description" content="Solar Physics & Complex Systems Researcher">
+  <meta name="twitter:image" content="https://alezamorano.github.io/profile.jpg">
+  
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -87,20 +110,45 @@
       text-decoration: none;
       font-weight: 600;
       border-bottom: 1px dotted #D98324;
+      transition: all 0.2s ease;
     }
     .contact-item a:hover {
       color: #b86b1c;
+      border-bottom: 1px solid #b86b1c;
     }
     .icon {
       font-size: 1.5rem;
       margin-right: 10px;
     }
+    
+    /* Separador visual */
+    .contact-divider {
+      width: 60px;
+      height: 2px;
+      background-color: #D98324;
+      margin: 25px auto;
+      opacity: 0.5;
+    }
+    
+    /* Texto pequeño para detalles */
+    .contact-note {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 25px;
+    }
+    
     footer {
       background-color: #D98324;
       color: white;
       padding: 18px;
       text-align: center;
       border-top: 2px solid #b86b1c;
+    }
+    
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .contact-item { font-size: 1rem; }
+      .contact-card { padding: 25px 20px; }
     }
   </style>
 </head>
@@ -122,19 +170,44 @@
     <section class="content-section">
       <h2>Get in touch</h2>
       <div class="contact-card">
+        
+        <!-- Email -->
         <div class="contact-item">
           <span class="icon">📧</span> 
           <a href="mailto:alejandro.zamorano@ug.uchile.cl">alejandro.zamorano@ug.uchile.cl</a>
         </div>
+        
+        <!-- Google Scholar -->
         <div class="contact-item">
           <span class="icon">📚</span> 
-          <a href="https://scholar.google.com/citations?user=rHv3T28AAAAJ&hl=en">Google Scholar</a>
+          <a href="https://scholar.google.com/citations?user=rHv3T28AAAAJ&hl=en" target="_blank">Google Scholar</a>
         </div>
+        
+        <!-- GitHub (opcional - añadido) -->
+        <!--
+        <div class="contact-item">
+          <span class="icon">🐙</span> 
+          <a href="https://github.com/alezamorano" target="_blank">GitHub</a>
+        </div>-->
+        
+        <!-- ORCID -->
+        <div class="contact-item">
+          <span class="icon">🆔</span> 
+          <a href="https://orcid.org/0000-0002-0211-3151" target="_blank">ORCID</a>
+        </div>
+
+        
+        <div class="contact-divider"></div>
+        
+        <!-- Ubicación -->
         <div class="contact-item">
           <span class="icon">📍</span> 
           Departamento de Física, Facultad de Ciencias<br>
-          Universidad de Chile, Santiago
+          Universidad de Chile<br>
+          Las Palmeras 3425, Ñuñoa<br>
+          Santiago, Chile
         </div>
+        
       </div>
     </section>
   </main>
