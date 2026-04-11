@@ -3,108 +3,194 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research and Interests</title>
+  <title>Alejandro Zamorano · About Me</title>
   <style>
+    /* --- ESTILO BASE --- */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       background-color: #F2F6D0;
       color: #333;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #D98324; 
-      padding: 20px;
+      background-color: #D98324;
+      padding: 20px 20px 10px 20px;
       text-align: center;
       color: white;
+      border-bottom: 4px solid #b86b1c;
+    }
+
+    header h1 {
+      margin: 0 0 15px 0;
+      font-size: 2.5rem;
+      font-weight: 500;
+      letter-spacing: -0.5px;
     }
 
     header nav ul {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       list-style-type: none;
       padding: 0;
-      margin: 20px 0 0 0;
+      margin: 0;
+      gap: 10px;
     }
 
     header nav ul li {
-      margin: 0 15px;
+      margin: 0 8px;
     }
 
     header nav ul li a {
       color: white;
       text-decoration: none;
-      font-size: 1.1em;
+      font-size: 1.1rem;
+      padding: 6px 14px;
+      border-radius: 25px;
+      transition: all 0.2s ease;
+      font-weight: 500;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
+    header nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Página activa */
+    header nav ul li a.active {
+      background-color: white;
+      color: #D98324;
     }
 
     main {
-      padding: 40px;
-      text-align: center;
+      padding: 40px 25px;
       background-color: #EFDCAB;
+      min-height: 60vh;
     }
 
     .content-section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
+    h2 {
+      color: #D98324;
+      font-size: 2rem;
+      margin-top: 0;
+      border-bottom: 2px solid #D98324;
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+
     .intro-text {
-      font-size: 1.2em;
-      line-height: 1.6em;
-      color: #333;
+      font-size: 1.25rem;
+      line-height: 1.7;
+      color: #2c2c2c;
+      margin-bottom: 30px;
     }
 
     .highlight {
-      font-weight: bold;
+      font-weight: 700;
       color: #D98324;
     }
 
-    footer {
-      background-color: #D98324;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+    /* Perfil */
+    .profile-container {
+      display: flex;
+      gap: 35px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin: 30px 0;
     }
 
-    /* Ajustes para la lista indentada */
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 20px 0;
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #D98324;
+      background-color: #ddd;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    ul li {
-      font-size: 1.1em;
-      margin: 5px 0;  /* Menos espacio entre puntos */
-      padding-left: 15px; /* Ajuste de la indentación */
+    .profile-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .profile-text p {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    /* Lista de intereses */
+    .interests-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 8px 20px;
+      margin: 25px 0;
+    }
+
+    .interest-item {
+      font-size: 1.1rem;
+      padding: 4px 0 4px 25px;
       position: relative;
     }
 
-    ul li::before {
-      content: "• ";
+    .interest-item::before {
+      content: "▹";
       color: #D98324;
       font-weight: bold;
+      font-size: 1.3rem;
       position: absolute;
       left: 0;
-      top: 0; /* Ajuste para que el símbolo esté más alineado con el texto */
+      top: 2px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #D98324;
+      color: white;
+      padding: 18px;
+      text-align: center;
+      border-top: 2px solid #b86b1c;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      header nav ul li a {
+        font-size: 1rem;
+        padding: 4px 10px;
+      }
+      
+      .profile-container {
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .interest-item {
+        text-align: left;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Research and Interests</h1>
+    <h1>Alejandro Zamorano</h1>
     <nav>
       <ul>
-        <li><a href="index.html">About Me</a></li>
+        <li><a href="index.html" class="active">About Me</a></li>
         <li><a href="articles.html">Articles</a></li>
         <li><a href="courses.html">Courses</a></li>
         <li><a href="programs.html">Programs</a></li>
@@ -115,38 +201,59 @@
 
   <main>
     <section class="content-section">
-      <p class="intro-text">
-        I am a PhD student focused on the study of <span class="highlight">solar flares</span> and their nonlinear dynamics using complex network tools.
-      </p>
+      <div class="profile-container">
+        <!-- Si tienes foto, reemplaza el src por "profile.jpg" -->
+        <img src="https://via.placeholder.com/180" alt="Alejandro Zamorano" class="profile-img">
+        
+        <div class="profile-text">
+          <p class="intro-text">
+            I am a <span class="highlight">PhD student</span> in Physics at the 
+            <span class="highlight">Universidad de Chile</span>, focused on the study of 
+            <span class="highlight">solar flares</span> and their nonlinear dynamics 
+            using complex network tools.
+          </p>
+          
+          <p>
+            My research combines observational data from space-based instruments 
+            (SDO, GOES) with theoretical frameworks from statistical mechanics and 
+            dynamical systems to understand the underlying mechanisms of magnetic 
+            energy release in the solar corona.
+          </p>
+          
+          <p>
+            <strong>Advisor:</strong> Dr. Pablo S. Moya<br>
+            <strong>Group:</strong> Solar and Space Physics Group (GFS)
+          </p>
+        </div>
+      </div>
 
-      <h2>Research Areas</h2>
-      <ul>
-        <li>Nonlinear Dynamics</li>
-        <li>Complex Systems</li>
-        <li>Statistical Mechanics</li>
-        <li>Plasma Physics</li>
-        <li>Solar Physics</li>
-        <li>Turbulence</li>
-        <li>Chaos</li>
-        <li>Active Matter</li>
-        <li>Quantum Chaos</li>
-        <li>Self Organized Criticality</li>
-        <li>Pattern Formation</li>
-        <li>Out of Equilibrium Statistical Mechanics</li>
-        <li>Special and General Relativity</li>
-        <li>Biophysics as Complex System</li>
-        <li>Social Dynamics</li>
-      </ul>
+      <h2>Research Interests</h2>
+      <div class="interests-grid">
+        <div class="interest-item">Nonlinear Dynamics</div>
+        <div class="interest-item">Complex Systems</div>
+        <div class="interest-item">Statistical Mechanics</div>
+        <div class="interest-item">Plasma Physics</div>
+        <div class="interest-item">Solar Physics</div>
+        <div class="interest-item">Turbulence</div>
+        <div class="interest-item">Chaos</div>
+        <div class="interest-item">Active Matter</div>
+        <div class="interest-item">Quantum Chaos</div>
+        <div class="interest-item">Self-Organized Criticality</div>
+        <div class="interest-item">Pattern Formation</div>
+        <div class="interest-item">Out-of-Equilibrium Stat. Mech.</div>
+        <div class="interest-item">Special & General Relativity</div>
+        <div class="interest-item">Biophysics as Complex System</div>
+        <div class="interest-item">Social Dynamics</div>
+      </div>
+      
+      <p style="margin-top: 30px; font-style: italic; color: #555;">
+        "Understanding the Sun as a complex, self-organizing system."
+      </p>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Alejandro Zamorano
-  </footer>
-</body>
-</html>
-
-    &copy; 2025 Alejandro Zamorano R
+    <p>&copy; 2026 Alejandro Zamorano · Solar Physics & Complex Systems</p>
   </footer>
 </body>
 </html>
