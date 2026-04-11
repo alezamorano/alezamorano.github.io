@@ -61,6 +61,7 @@
     .content-section {
       max-width: 900px;
       margin: 0 auto;
+      text-align: center;
     }
     h2 {
       color: #D98324;
@@ -70,12 +71,41 @@
       padding-bottom: 8px;
       display: inline-block;
     }
+    
+    /* Estilo para el mensaje "Under Construction" */
+    .construction-message {
+      background-color: white;
+      padding: 50px 30px;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      margin-top: 40px;
+    }
+    
+    .construction-message h3 {
+      color: #D98324;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    
+    .construction-message p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    
+    .construction-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+    
     .program-card {
       background-color: white;
       padding: 18px 25px;
       margin-bottom: 18px;
       border-radius: 12px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+      text-align: left;
     }
     .program-name {
       font-weight: 700;
@@ -121,8 +151,22 @@
   <main>
     <section class="content-section">
       <h2>Codes & Programs</h2>
-      <div style="margin-top: 30px;">
-        
+      
+      <!-- MENSAJE "UNDER CONSTRUCTION" -->
+      <div class="construction-message">
+        <div class="construction-icon">🚧</div>
+        <h3>Under Construction</h3>
+        <p>This section is currently being updated.<br>Please check back soon for codes and programs.</p>
+        <p style="font-size: 0.95rem; color: #888;">Expected completion: May 2026</p>
+      </div>
+
+      <!-- 
+      ============================================================
+      SECCIÓN DE PROGRAMAS COMENTADA - DESCOMENTAR CUANDO ESTÉ LISTA
+      ============================================================
+      
+      <div style="margin-top: 30px; text-align: left;">
+
         <div class="program-card">
           <div class="program-name">FlareNet</div>
           <div class="program-desc">Python package for constructing complex networks from solar flare catalogs. Implements visibility graph and recurrence network algorithms.</div>
@@ -150,11 +194,15 @@
         </div>
 
       </div>
+      
+      ============================================================
+      -->
+      
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Alejandro Zamorano · Solar Physics & Complex Systems</p>
+    <p>&copy; 2026 Alejandro Zamorano</p>
   </footer>
 </body>
 </html>
