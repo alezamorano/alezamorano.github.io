@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Zamorano · Articles</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #F2F6D0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #D98324;
+      padding: 20px 20px 10px 20px;
+      text-align: center;
+      color: white;
+      border-bottom: 4px solid #b86b1c;
+    }
+    header h1 {
+      margin: 0 0 15px 0;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      gap: 10px;
+    }
+    header nav ul li {
+      margin: 0 8px;
+    }
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 6px 14px;
+      border-radius: 25px;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+    header nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    header nav ul li a.active {
+      background-color: white;
+      color: #D98324;
+    }
+    main {
+      padding: 40px 25px;
+      background-color: #EFDCAB;
+      min-height: 60vh;
+    }
+    .content-section {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #D98324;
+      font-size: 2rem;
+      margin-top: 0;
+      border-bottom: 2px solid #D98324;
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+    .article-list {
+      margin-top: 30px;
+    }
+    .article-item {
+      background-color: white;
+      padding: 20px 25px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+      border-left: 5px solid #D98324;
+    }
+    .article-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #2c2c2c;
+      margin: 0 0 8px 0;
+    }
+    .article-authors {
+      color: #555;
+      margin: 5px 0;
+    }
+    .article-journal {
+      font-style: italic;
+      color: #777;
+      margin: 5px 0;
+    }
+    .article-links {
+      margin-top: 12px;
+    }
+    .article-links a {
+      display: inline-block;
+      background-color: #F2F6D0;
+      color: #D98324;
+      padding: 5px 15px;
+      margin-right: 10px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid #D98324;
+      transition: all 0.2s;
+    }
+    .article-links a:hover {
+      background-color: #D98324;
+      color: white;
+    }
+    footer {
+      background-color: #D98324;
+      color: white;
+      padding: 18px;
+      text-align: center;
+      border-top: 2px solid #b86b1c;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alejandro Zamorano</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="articles.html" class="active">Articles</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <h2>Selected Publications</h2>
+      <div class="article-list">
+        
+        <div class="article-item">
+          <div class="article-title">Complex Network Analysis of Solar Flare Waiting Times</div>
+          <div class="article-authors"><strong>A. Zamorano</strong>, P.S. Moya, V. Muñoz</div>
+          <div class="article-journal">The Astrophysical Journal, 962, 45 (2024)</div>
+          <div class="article-links">
+            <a href="#">arXiv</a>
+            <a href="#">DOI</a>
+            <a href="#">PDF</a>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">Visibility Graph Analysis of Solar Flare Time Series</div>
+          <div class="article-authors"><strong>A. Zamorano</strong>, P.S. Moya</div>
+          <div class="article-journal">Solar Physics, 299, 12 (2024)</div>
+          <div class="article-links">
+            <a href="#">arXiv</a>
+            <a href="#">DOI</a>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">Self-Organized Criticality in Stellar Flares: A Statistical Approach</div>
+          <div class="article-authors">P.S. Moya, <strong>A. Zamorano</strong>, R.A. López</div>
+          <div class="article-journal">Monthly Notices of the Royal Astronomical Society, 527(3), 6789 (2023)</div>
+          <div class="article-links">
+            <a href="#">DOI</a>
+            <a href="#">PDF</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Alejandro Zamorano · Solar Physics & Complex Systems</p>
+  </footer>
+</body>
+</html>
