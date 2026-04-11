@@ -3,7 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alejandro Zamorano · Programs</title>
+  <title>Alejandro Zamorano · Codes & Programs</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Codes and programs developed by Alejandro Zamorano for solar physics, complex networks, and nonlinear dynamics research.">
+  <meta name="keywords" content="Alejandro Zamorano, Codes, Programs, Solar Physics, Complex Networks, Python, Fortran, SOC, Sandpile Models, SDO">
+  <meta name="author" content="Alejandro Zamorano">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://alezamorano.github.io/programs.html">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Alejandro Zamorano · Codes & Programs">
+  <meta property="og:description" content="Research codes for solar physics, complex networks, and self-organized criticality.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alezamorano.github.io/programs.html">
+  <meta property="og:image" content="https://alezamorano.github.io/profile.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Alejandro Zamorano · Codes">
+  <meta name="twitter:description" content="Research codes for solar physics and complex systems.">
+  <meta name="twitter:image" content="https://alezamorano.github.io/profile.png">
+  
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -99,6 +122,40 @@
       margin-bottom: 20px;
     }
     
+    /* Preview de lo que vendrá */
+    .coming-soon-preview {
+      margin-top: 35px;
+      padding: 20px;
+      background-color: rgba(217, 131, 36, 0.06);
+      border-radius: 12px;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .coming-soon-preview h4 {
+      color: #b86b1c;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    
+    .preview-item {
+      padding: 8px 0;
+      color: #666;
+      border-bottom: 1px dashed #ddd;
+    }
+    
+    .preview-item:last-child {
+      border-bottom: none;
+    }
+    
+    .preview-item strong {
+      color: #D98324;
+    }
+    
+    /* Estilos para cuando se activen los programas */
     .program-card {
       background-color: white;
       padding: 18px 25px;
@@ -125,12 +182,46 @@
       font-weight: 600;
       margin-right: 20px;
     }
+    
+    /* GitHub link en construcción */
+    .github-link {
+      margin-top: 25px;
+    }
+    
+    .github-link a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: white;
+      color: #333;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 30px;
+      font-weight: 500;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: all 0.2s ease;
+      border: 1px solid #ddd;
+    }
+    
+    .github-link a:hover {
+      background-color: #D98324;
+      color: white;
+      border-color: #D98324;
+      box-shadow: 0 4px 10px rgba(217, 131, 36, 0.2);
+    }
+    
     footer {
       background-color: #D98324;
       color: white;
       padding: 18px;
       text-align: center;
       border-top: 2px solid #b86b1c;
+    }
+    
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .construction-message { padding: 35px 20px; }
+      .construction-message h3 { font-size: 2rem; }
     }
   </style>
 </head>
@@ -150,46 +241,57 @@
 
   <main>
     <section class="content-section">
-      <h2>Codes & Programs</h2>
+      <h2>Codes &amp; Programs</h2>
       
       <!-- MENSAJE "UNDER CONSTRUCTION" -->
       <div class="construction-message">
         <div class="construction-icon">🚧</div>
         <h3>Under Construction</h3>
-        <p>This section is currently being updated.<br>Please check back soon for codes and programs.</p>
-        <!-- <p style="font-size: 0.95rem; color: #888;">Expected completion: May 2026</p>-->
-      </div>
+        <p>Please check back soon for research codes and tools.</p>
+
 
       <!-- 
       ============================================================
-      SECCIÓN DE PROGRAMAS COMENTADA - DESCOMENTAR CUANDO ESTÉ LISTA
+      SECCIÓN DE PROGRAMAS COMPLETA - DESCOMENTAR CUANDO ESTÉ LISTA
       ============================================================
       
       <div style="margin-top: 30px; text-align: left;">
 
         <div class="program-card">
-          <div class="program-name">FlareNet</div>
-          <div class="program-desc">Python package for constructing complex networks from solar flare catalogs. Implements visibility graph and recurrence network algorithms.</div>
+          <div class="program-name">SOC-Solar</div>
+          <div class="program-desc">Fortran/Python code for simulating self-organized criticality models (BTW sandpile) on directed and undirected complex networks. Applied to stellar flare waiting time distributions and energy statistics.</div>
           <div class="program-links">
-            <a href="#">GitHub</a>
-            <a href="#">Documentation</a>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">arXiv</a>
+            <a href="#" target="_blank">Documentation</a>
           </div>
         </div>
 
         <div class="program-card">
-          <div class="program-name">SOC-Solar</div>
-          <div class="program-desc">Fortran/Python code for simulating self-organized criticality models (BTW sandpile) applied to stellar flare statistics.</div>
+          <div class="program-name">FlareNet</div>
+          <div class="program-desc">Python package for constructing complex networks from solar flare catalogs (GOES, SDO). Implements visibility graph, recurrence network, and ordinal partition network algorithms for time series analysis.</div>
           <div class="program-links">
-            <a href="#">GitHub</a>
-            <a href="#">arXiv</a>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">PyPI</a>
+            <a href="#" target="_blank">Docs</a>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-name">Rewiring-LH</div>
+          <div class="program-desc">Implementation of the Lu-Hamilton solar flare model with dynamic network rewiring. Studies the interplay between SOC dynamics and evolving network topology.</div>
+          <div class="program-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Paper</a>
           </div>
         </div>
 
         <div class="program-card">
           <div class="program-name">SDO-Downloader</div>
-          <div class="program-desc">Bash/Python scripts to automate the download and preprocessing of SDO/AIA and HMI data from the JSOC database.</div>
+          <div class="program-desc">Bash/Python scripts to automate the download and preprocessing of SDO/AIA and HMI data from the JSOC database. Includes parallel downloading and FITS to NumPy conversion.</div>
           <div class="program-links">
-            <a href="#">GitHub</a>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Tutorial</a>
           </div>
         </div>
 
@@ -202,7 +304,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Alejandro Zamorano</p>
+    <p>&copy; 2026 Alejandro Zamorano </p>
   </footer>
 </body>
 </html>
