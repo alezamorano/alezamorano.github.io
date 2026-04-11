@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Zamorano · Contact</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #F2F6D0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #D98324;
+      padding: 20px 20px 10px 20px;
+      text-align: center;
+      color: white;
+      border-bottom: 4px solid #b86b1c;
+    }
+    header h1 {
+      margin: 0 0 15px 0;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      gap: 10px;
+    }
+    header nav ul li {
+      margin: 0 8px;
+    }
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 6px 14px;
+      border-radius: 25px;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+    header nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    header nav ul li a.active {
+      background-color: white;
+      color: #D98324;
+    }
+    main {
+      padding: 40px 25px;
+      background-color: #EFDCAB;
+      min-height: 60vh;
+    }
+    .content-section {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h2 {
+      color: #D98324;
+      font-size: 2rem;
+      margin-top: 0;
+      border-bottom: 2px solid #D98324;
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+    .contact-card {
+      background-color: white;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      margin-top: 30px;
+    }
+    .contact-item {
+      margin: 20px 0;
+      font-size: 1.2rem;
+    }
+    .contact-item a {
+      color: #D98324;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px dotted #D98324;
+    }
+    .contact-item a:hover {
+      color: #b86b1c;
+    }
+    .icon {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+    footer {
+      background-color: #D98324;
+      color: white;
+      padding: 18px;
+      text-align: center;
+      border-top: 2px solid #b86b1c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alejandro Zamorano</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <h2>Get in touch</h2>
+      <div class="contact-card">
+        <div class="contact-item">
+          <span class="icon">📧</span> 
+          <a href="mailto:alejandro.zamorano@ug.uchile.cl">alejandro.zamorano@ug.uchile.cl</a>
+        </div>
+        <div class="contact-item">
+          <span class="icon">📚</span> 
+          <a href="#">Google Scholar</a>
+        </div>
+        <div class="contact-item">
+          <span class="icon">💼</span> 
+          <a href="#">LinkedIn</a>
+        </div>
+        <div class="contact-item">
+          <span class="icon">🐙</span> 
+          <a href="#">GitHub</a>
+        </div>
+        <div class="contact-item">
+          <span class="icon">📍</span> 
+          Departamento de Física, FCFM<br>
+          Universidad de Chile, Santiago
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Alejandro Zamorano · Solar Physics & Complex Systems</p>
+  </footer>
+</body>
+</html>
