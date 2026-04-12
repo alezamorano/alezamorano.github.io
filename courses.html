@@ -103,12 +103,6 @@
       flex-wrap: wrap;
       align-items: baseline;
     }
-    .course-code {
-      font-weight: 700;
-      color: #D98324;
-      min-width: 120px;
-      font-size: 1.1rem;
-    }
     .course-name {
       flex: 1;
       font-weight: 600;
@@ -118,6 +112,23 @@
       font-style: italic;
       margin-left: 20px;
     }
+    
+    /* Badge para nivel del curso */
+    .course-level {
+      display: inline-block;
+      background-color: #F2F6D0;
+      color: #D98324;
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 12px;
+      margin-left: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      font-style: normal;
+      vertical-align: middle;
+    }
+    
     footer {
       background-color: #D98324;
       color: white;
@@ -129,6 +140,7 @@
       header h1 { font-size: 2rem; }
       .course-item { flex-direction: column; }
       .course-role { margin-left: 0; margin-top: 5px; }
+      .course-level { margin-left: 0; margin-top: 5px; display: inline-block; }
     }
   </style>
 </head>
@@ -152,7 +164,10 @@
       <div style="margin-top: 30px;">
 
         <div class="course-item">
-          <span class="course-name">Statistical Mechanics (Graduate & Undergraduate)</span>
+          <span class="course-name">
+            Statistical Mechanics
+            <span class="course-level">Grad/Undergrad</span>
+          </span>
           <span class="course-role">Teaching Assistant · 2023-2024</span>
         </div>
         
@@ -162,7 +177,10 @@
         </div>
         
         <div class="course-item">
-          <span class="course-name">Classical Electrodynamics (Graduate & Undergraduate)</span>
+          <span class="course-name">
+            Classical Electrodynamics
+            <span class="course-level">Grad/Undergrad</span>
+          </span>
           <span class="course-role">Teaching Assistant · 2022 & 2024</span>
         </div>
 
@@ -195,20 +213,6 @@
           <span class="course-name">Introduction to Mechanics</span>
           <span class="course-role">Teaching Assistant · 2019</span>
         </div>
-
-        <!-- 
-        ============================================================
-        CURSOS COMENTADOS - DESCOMENTAR SI ES NECESARIO
-        ============================================================
-        
-        <div class="course-item">
-          <span class="course-code">FI1002</span>
-          <span class="course-name">Introducción a la Física Moderna</span>
-          <span class="course-role">Ayudante · 2022-2023</span>
-        </div>
-        
-        ============================================================
-        -->
 
       </div>
     </section>
