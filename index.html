@@ -220,22 +220,13 @@
       top: 2px;
     }
     
-    /* Quote box */
-    .quote-box {
-      margin-top: 30px;
-      padding: 18px 25px;
-      background-color: white;
-      border-radius: 40px 10px 40px 10px;
-      text-align: center;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-      border: 1px solid rgba(217, 131, 36, 0.2);
-    }
-    
-    .quote-box p {
-      margin: 0;
+    /* Frase final - texto simple */
+    .closing-quote {
+      margin-top: 35px;
       font-style: italic;
-      color: #555;
-      font-size: 1.15rem;
+      color: #777;
+      font-size: 1rem;
+      text-align: left;
     }
 
     /* Footer */
@@ -274,6 +265,10 @@
       
       .advisor-info {
         text-align: left;
+      }
+      
+      .closing-quote {
+        text-align: center;
       }
     }
   </style>
@@ -341,9 +336,9 @@
         <div class="interest-item">Knot Theory</div>
       </div>
       
-      <div class="quote-box">
-        <p>"We live in a complex, nonlinear universe."</p>
-      </div>
+      <!-- Frase final como texto simple, sin cuadro -->
+      <p class="closing-quote">"We live in a complex, nonlinear universe."</p>
+      
     </section>
   </main>
 
